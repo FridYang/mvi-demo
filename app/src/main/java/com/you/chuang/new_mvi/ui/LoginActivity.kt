@@ -1,5 +1,6 @@
 package com.you.chuang.new_mvi.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -110,6 +111,6 @@ class LoginActivity : AppCompatActivity() {
 
     private fun navigateToHome() {
         isLoggedIn = true
-        setContentView(R.layout.activity_home)
+        startActivity(Intent(this, ProfileActivity::class.java))
     }
 }
